@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-jnjf
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-zhym-tenant/test-app-fwus/devfile-sample-python-basic-jnjf@sha256:fc5261435d0bbde22ac351fbece482815a4324e77a3f3b743094dfe41b371054
+        name: my-python
+        resources: {}
+status: {}
